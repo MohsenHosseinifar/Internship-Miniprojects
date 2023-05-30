@@ -1,0 +1,36 @@
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top{
+
+  font-size: 40px;
+    width: auto;
+    height: auto;
+}
+.top-child{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    height: auto;
+    background-color: rgb(152, 152, 177);
+}
+.bottem{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.bottem_child{
+    border: 5px solid rgb(132, 0, 255);
+    padding: 10px;
+    margin: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.bottem{
+    display: none;
+}
+
