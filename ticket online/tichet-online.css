@@ -1,0 +1,33 @@
+div.table-contry{
+display: flex;
+flex-direction: column;
+margin-left: 146px;
+background-color: rgb(115, 223, 144);
+}
+div.table-city{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(115, 223, 144);
+    }
+    div.continer{
+        margin: auto;
+        background-color: chocolate;
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+    }
+    select>{
+        margin-left: 20px;
+        width: 100px;
+        height: 20px;
+        background-color: rgb(183, 221, 77);
+    }
+    option{
+        margin-left: 20px;
+        width: 200px;
+        height: 30px;
+        background-color: rgb(172, 99, 180);
+    }
