@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,4 +75,15 @@ footer {
 
 .txt-white a {
   color: #eee !important;
+}
+.btnup {
+  width: 40px;
+  height: 40px;
+  background-color: #b69800;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 1400px;
 }

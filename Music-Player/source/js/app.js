@@ -3,6 +3,8 @@ let music = $.querySelectorAll(".fa-play");
 let audio = $.querySelectorAll("audio");
 
 let targetmusic;
+
+
 music.forEach(function (musicForeach) {
   musicForeach.addEventListener("click", function (event) {
     targetmusic = event.target.dataset.name;

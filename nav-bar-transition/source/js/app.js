@@ -12,3 +12,7 @@ document.addEventListener("scroll", function () {
     logo.style.height = "84px";
   }
 });
+function btnscroll() {
+  window.scrollTo(0, 0);
+  document.style.transition = " 2s";
+}
