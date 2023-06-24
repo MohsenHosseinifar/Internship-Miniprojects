@@ -1,0 +1,12 @@
+{
+  "name": "test-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    
+    "watch":"tsc -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
