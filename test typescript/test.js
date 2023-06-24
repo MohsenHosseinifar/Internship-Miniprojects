@@ -3,8 +3,6 @@
 function sum(num1, num2) {
     return num1 + num2;
 }
-// استفاده از تابع جمع
-const s = sum(10, 20);
 // تعریف متغیرها
 const a = 12;
 const b = 42.55;
@@ -32,7 +30,25 @@ const per = {
 const f = ["mohsen", true];
 // نمایش خروجی در کنسول
 console.log(per);
-console.log(s);
+console.log(sum(10, 20));
 console.log(per.gender);
 const stu = null;
 const mohsen = 12;
+const abas = 12;
+const jafar = 145;
+const seyed = 18;
+const f2 = (num1, num2) => {
+    return num1 + num2;
+};
+console.log("func " + f2(20, 30));
+class news {
+    constructor(n) {
+        news.title = n;
+    }
+    static printnews() {
+        console.log(news.title);
+    }
+}
+const ne = new news("hello");
+news.title = "news ";
+news.printnews();

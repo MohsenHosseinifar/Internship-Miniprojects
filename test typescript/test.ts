@@ -3,9 +3,6 @@ function sum(num1: number, num2: number) {
   return num1 + num2;
 }
 
-// استفاده از تابع جمع
-const s = sum(10, 20);
-
 // تعریف متغیرها
 const a = 12;
 const b = 42.55;
@@ -43,9 +40,34 @@ const f: [string, boolean] = ["mohsen", true];
 
 // نمایش خروجی در کنسول
 console.log(per);
-console.log(s);
-
+console.log(sum(10, 20));
 console.log(per.gender);
 
-const stu :null=null;
-const mohsen:(string|number)=12;
+const stu: null = null;
+const mohsen: string | number = 12;
+
+type strvanubmer = string | number;
+
+const abas: strvanubmer = 12;
+const jafar: strvanubmer = 145;
+const seyed: strvanubmer = 18;
+
+type func = (num1: number, num2: number) => number;
+const f2: func = (num1, num2) => {
+  return num1 + num2;
+};
+console.log("func " + f2(20, 30));
+
+class news {
+  public static title: string;
+  constructor(n: string) {
+    news.title = n;
+  }
+  static printnews() {
+    console.log(news.title);
+  }
+}
+
+const ne = new news("hello");
+news.title = "news ";
+news.printnews();
