@@ -71,3 +71,36 @@ class news {
 const ne = new news("hello");
 news.title = "news ";
 news.printnews();
+
+const circ = function(deameter: number)  {
+  return deameter * Math.PI;
+};
+console.log(circ(25));
+
+const arrei: string[] = ["mohsen", "abas"];
+
+let person: {
+  name: string;
+  age: number;
+  gender: boolean;
+} = {
+  name: "mohsen",
+  age: 25,
+  gender: true,
+};
+
+let person2: {
+  name: any;
+  age: any;
+  gender: any;
+} = {
+  name: 654,
+  age: 48489,
+  gender: 777,
+};
+person2 = {
+  name: 446,
+  age: 53345,
+  gender: 45,
+};
+console.log(person2);
