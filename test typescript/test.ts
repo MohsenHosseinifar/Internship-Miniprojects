@@ -1,4 +1,4 @@
-// تابع جمع دو عدد
+/* // تابع جمع دو عدد
 function sum(num1: number, num2: number) {
   return num1 + num2;
 }
@@ -72,7 +72,7 @@ const ne = new news("hello");
 news.title = "news ";
 news.printnews();
 
-const circ = function(deameter: number)  {
+const circ = function (deameter: number) {
   return deameter * Math.PI;
 };
 console.log(circ(25));
@@ -104,3 +104,52 @@ person2 = {
   gender: 45,
 };
 console.log(person2);
+
+let great: (a: String, b: String) => void;
+great = (name: String, fname: String) => {
+  console.log(`${name} name ${fname} famili`);
+};
+great("mohsen", "hoseini");
+
+ */
+/* const taga = document.querySelector("a")!;
+console.log(taga?.innerHTML);
+function cliked() {
+  console.log("hello");
+}
+taga?.addEventListener("click", cliked) ; */
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".newitemform") as HTMLFormElement;
+  const input1 = document.getElementById("input1") as HTMLInputElement;
+  const input2 = document.getElementById("input2") as HTMLInputElement;
+  const input3 = document.getElementById("input3") as HTMLInputElement;
+  const div4 = document.querySelector(".div4") as HTMLDivElement;
+
+  form.addEventListener("submit", (event: Event) => {
+    event.preventDefault();
+    if (input1.value === "" || input2.value === "" || input3.value === "") {
+      alert("لطفاً تمامی فیلدها را پر کنید!");
+      return;
+    }
+    const div = document.createElement("div");
+    const span1 = document.createElement("span");
+    span1.innerHTML = " name " + input1.value;
+    div.appendChild(span1);
+
+    const span2 = document.createElement("span");
+    span2.innerHTML = " fname " + input2.value;
+    div.appendChild(span2);
+
+    const span3 = document.createElement("span");
+    span3.innerHTML = " age " + input3.value;
+    div.appendChild(span3);
+
+    document.body.appendChild(div);
+    div.classList.add("div-continer");
+
+    div.addEventListener("click", () => {
+      div.remove();
+    });
+    form.reset();
+  });
+});
